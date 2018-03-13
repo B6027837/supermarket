@@ -6,9 +6,7 @@ class Shift {
 	String dayOfWeek
 	String numberOfHours
 	String startingTime
-	String task
-	String employee
-	String team
+	
 
     static constraints = {
 
@@ -16,9 +14,7 @@ class Shift {
 	dayOfWeek blank:false, nullable:false
 	numberOfHours blank:false, nullable:false
 	startingTime blank:false, nullable:false
-	task blank:false, nullable:false
-	employee blank:false, nullable:false
-	team blank:false, nullable:false
+	
 
 
     }

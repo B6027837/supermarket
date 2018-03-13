@@ -8,8 +8,7 @@ class Manager {
 	String managerEmail
 	String office
 	String department
-	String teamLeader
-	String employee
+	
 
     static constraints = {
 
@@ -19,8 +18,6 @@ class Manager {
 	managerEmail blank:false, nullable:false, email:true
 	office blank:false, nullable:false
 	department blank:false, nullable:false
-	teamLeader blank:false, nullable:false
-	employee blank:false, nullable:false
-
+	
     }
 }

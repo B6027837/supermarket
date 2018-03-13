@@ -9,9 +9,7 @@ class Task {
 	String timeRequired
 	String description
 	String taskCompleted
-	String shift
-	String employee
-	String team
+	
 
 
     static constraints = {
@@ -23,9 +21,7 @@ class Task {
 	timeRequired blank:false, nullable:false
 	description blank:false, nullable:false
 	taskCompleted blank:false, nullable:false
-	shift blank:false, nullable:false
-	employee blank:false, nullable:false
-	team blank:false, nullable:false
+	
 
     }
 }
