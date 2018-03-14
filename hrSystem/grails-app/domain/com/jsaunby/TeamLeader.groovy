@@ -10,6 +10,10 @@ class TeamLeader {
 	String leaderEmail
 	String password
 	
+	Manager manager
+	Team team
+	static hasMany=[employees:Employee]
+
 
 
     static constraints = {
@@ -22,7 +26,9 @@ class TeamLeader {
 	leaderEmail blank:false, nullable:false
 	password blank:false, nullable:false
 
-
+	manager nullable:true, blank:true
+	team nullable:true, blank:true
+	employees nullable:true , blank:true  
 
 
     }

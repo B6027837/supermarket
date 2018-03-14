@@ -6,6 +6,9 @@ class Team {
 	int numberOfEmployees
 	String sectionName
 	String description
+
+	TeamLeader teamleader
+	static hasMany=[employees:Employee,shifts:Shift,tasks:Task]
 	
 
     static constraints = {
@@ -15,6 +18,11 @@ class Team {
 	sectionName blank:false, nullable:false
 	description blank:false, nullable:false
 	
+	tasks nullable:true , blank:true
+	shifts nullable:true, blank:true  
+	employees nullable:true , blank:true
+	teamleader nullable:true , blank:true
+
 
     }
 

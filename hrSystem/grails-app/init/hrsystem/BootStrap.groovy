@@ -118,6 +118,14 @@ taskCompleted: 'no'
 ).save()
 
 
+def shift = new
+Shift(
+timeOfDay: 'Morning',
+dayOfWeek: 'saturday',
+numberOfHours: '4',
+startingTime: '8.00am'
+).save()
+
 def shift2 = new
 Shift(
 timeOfDay: 'Evening',

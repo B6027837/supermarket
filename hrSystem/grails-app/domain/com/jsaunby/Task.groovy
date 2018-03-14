@@ -10,7 +10,8 @@ class Task {
 	String description
 	String taskCompleted
 	
-
+	static hasMany=[employees:Employee,teams:Team,shifts:Shift]
+	static belongsTo=[Team,Employee]
 
     static constraints = {
 
@@ -22,6 +23,11 @@ class Task {
 	description blank:false, nullable:false
 	taskCompleted blank:false, nullable:false
 	
+	teams nullable:true , blank:true
+	employees nullable:true , blank:true
+	shifts nullable:true , blank:true 
+
+
 
     }
 }
