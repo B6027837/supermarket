@@ -3,7 +3,7 @@ package com.jsaunby
 class Manager {
 
 	String fullName
-	String userName
+	String username
 	String password
 	String managerEmail
 	String office
@@ -11,13 +11,13 @@ class Manager {
 
 	Manager manager
 	Team team
-	static hasMany=[employees:Employee]
-	
+	static hasMany=[employees:Employee,teamleaders:TeamLeader]
+
 
     static constraints = {
 
 	fullName blank:false, nullable:false
-	userName blank:false, nullable:false
+	username blank:false, nullable:false
 	password blank:false, nullable:false
 	managerEmail blank:false, nullable:false, email:true
 	office blank:false, nullable:false

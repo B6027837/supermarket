@@ -15,26 +15,12 @@
 </head>
 <body>
 
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/#">
-		    <asset:image src="grails.svg" alt="Grails Logo"/>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-                <ul class="nav navbar-nav navbar-right">
-                    <g:pageProperty name="page.nav" />
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div class="row">
+	<h1>Welcome to </h1>
+ <asset:image src="Sainsbury's_Logo.svg.png" height="300" width="700"/>
+<g:loginToggle />
+ <g:mainloginToggle />
+</div>
 
     <g:layoutBody/>
 
@@ -48,3 +34,6 @@
 
 </body>
 </html>
+
+
+

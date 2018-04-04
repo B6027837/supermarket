@@ -7,7 +7,7 @@ class TeamLeader {
 	String employeeID
 	String sectionName
 	String officePhone
-	String leaderEmail
+	String leaderemail
 	String password
 	
 	Manager manager
@@ -23,7 +23,7 @@ class TeamLeader {
 	employeeID blank:false, nullable:false
 	sectionName blank:false, nullable:false
 	officePhone blank:false, nullable:false
-	leaderEmail blank:false, nullable:false
+	leaderemail blank:false, nullable:false
 	password blank:false, nullable:false
 
 	manager nullable:true, blank:true

@@ -11,6 +11,7 @@ class Shift {
 	static hasMany=[teams:Team,tasks:Task]
 	static belongsTo=[Task,Team]
 
+
     static constraints = {
 
 	timeOfDay blank:false, nullable:false
